@@ -1,0 +1,49 @@
+{% include 'adminheader.html' %}
+<br><br>
+<html>
+    <body>
+        <center>
+        <h1>viewstudent</h1>
+        <table border="1" class="table table-bordered" style="width: 1200px;">
+            <thead class="table-info">
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Place</th>
+            <th>Phone</th>
+            <th>Email</th>
+        </tr>
+        {% for i in b %}
+        <tr>
+            <td>{{i.fname}}</td>
+            <td>{{i.lname}}</td>
+            <td>{{i.place}}</td>
+            <td>{{i.phone}}</td>
+            <td>{{i.email}}</td>
+            <td><a href="/accept/{{i.login_id}}" class="btn btn-success">Accept</a></td>
+            <td><a href="/reject/{{i.login_id}}" class="btn btn-danger">Reject</a></td>
+            <td><a href="/viewparent/{{i.login_id}}" class="btn btn-success">View parent</a></td>
+            <td><a href="/viewattendance/{{i.login_id}}" class="btn btn-success">View Attendance</a></td>
+        </tr>
+        {% endfor %}
+    </table>
+    </center>
+    </body>
+</html>
+<br><br><br>
+
+{% include 'footer.html' %}
+
+<a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+<!-- Vendor JS Files -->
+<script src="/static/assets/vendor/purecounter/purecounter_vanilla.js"></script>
+<script src="/static/assets/vendor/aos/aos.js"></script>
+<script src="/static/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="/static/assets/vendor/glightbox/js/glightbox.min.js"></script>
+<script src="/static/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+<script src="/static/assets/vendor/swiper/swiper-bundle.min.js"></script>
+<script src="/static/assets/vendor/php-email-form/validate.js"></script>
+
+<!-- Template Main JS File -->
+<script src="/static/assets/js/main.js"></script>

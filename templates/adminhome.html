@@ -1,0 +1,362 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Admin</h1>
+    <a href="/staff">Staffregg</a><br>
+    <a href="viewstaff">viewstaff</a><br>
+    <a href="viewstudent">viewstudent</a><br>
+    <a href="managecourse">Manage Course</a><br>
+    <a href="managesubject">Manage Subject</a><br>
+    <a href="viewfeedback">View Feedback</a><br>
+    <a href="Viewleave">View Leave</a>
+    
+
+</body>
+</html> -->
+
+{% include 'adminheader.html' %}
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero">
+    <div class="hero-container">
+      <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
+
+        <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
+
+        <div class="carousel-inner" role="listbox">
+
+          <!-- Slide 1 -->
+          <div class="carousel-item active" style="background-image: url('/static/assets/img/slide/slide-1.jpg');">
+            <div class="carousel-container">
+              <div class="carousel-content container">
+                <h2 class="animate__animated animate__fadeInDown">Welcome to <span>Student360</span></h2>
+                <p class="animate__animated animate__fadeInUp">Welcome to Student360, your all-in-one student management platform designed to simplify and enhance the educational experience. From tracking academic progress to managing student data, our user-friendly system ensures that administrators, teachers, and students stay connected and organized. With powerful tools for attendance, grades, and communication, Student360 provides a 360-degree view of every student's journey, empowering educators to focus on what matters most—learning and growth.</p>
+                <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="carousel-item" style="background-image: url('/static/assets/img/slide/slide-2.jpg');">
+            <div class="carousel-container">
+              <div class="carousel-content container">
+                <h2 class="animate__animated animate__fadeInDown">Student360</h2>
+                <p class="animate__animated animate__fadeInUp">Student360 is a comprehensive student management platform designed to streamline academic and administrative processes. From tracking attendance and grades to managing student records, our easy-to-use system offers a complete solution for schools and universities. With real-time insights and seamless communication tools, Student360 empowers educators, students, and parents to stay connected and focused on success.</p>
+                <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
+              </div>
+            </div>
+          </div>
+        
+
+        
+
+        <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+        </a>
+        <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
+          <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+        </a>
+
+      </div>
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= About Us Section ======= -->
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row no-gutters">
+          <div class="col-lg-6 video-box">
+            <img src="/static/2425129.jpg" class="img-fluid" alt="">
+            <a href="https://youtu.be/TDyUBqRT4vk?si=YU_wQeZnrZMO2asj" class="venobox play-btn mb-4" data-vbtype="video" data-autoplay="true"></a>
+          </div>
+
+          <div class="col-lg-6 d-flex flex-column justify-content-center about-content">
+
+            <div class="section-title">
+              <h2>About Us</h2>
+              <p>Student360: A comprehensive, easy-to-use platform for managing student data, tracking academic progress, and enhancing communication between students, parents, and educators.</p>
+            </div>
+
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+              <div class="icon"><i class="bx bx-folder"></i></div>
+              <h4 class="title"><a href="">All-in-One Student Management</a></h4>
+              <p class="description">Streamlines student data, attendance, and grade tracking.</p>
+            </div>
+
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+              <div class="icon"><i class="bx bx-smile"></i></div>
+              <h4 class="title"><a href="">User-Friendly Interface</a></h4>
+              <p class="description">Simple, intuitive design for easy navigation and use.</p>
+            </div>
+
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+              <div class="icon"><i class="bx bx-group"></i></div>
+              <h4 class="title"><a href="">Engagement for All</a></h4>
+              <p class="description">Dedicated portals for students, parents, and teachers to stay connected.</p>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Us Section -->
+
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Services</h2>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up">
+            <div class="icon"><i class="bi bi-person-lines-fill"></i></div>
+            <h4 class="title"><a href="">Comprehensive Student Management:</a></h4>
+            <p class="description">Efficiently manage student information, attendance, and academic progress in one centralized system.</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
+            <div class="icon"><i class="bi bi-grid-fill"></i></div>
+            <h4 class="title"><a href="">User-Friendly Interface</a></h4>
+            <p class="description">An intuitive design ensures easy navigation for all users, from administrators to students.</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">
+            <div class="icon"><i class="bi bi-graph-up-arrow"></i></div>
+            <h4 class="title"><a href="">Real-Time Analytics</a></h4>
+            <p class="description">Access real-time data and insights to drive informed decision-making and improve educational outcomes.</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="300">
+            <div class="icon"><i class="bi bi-people-fill"></i></div>
+            <h4 class="title"><a href="">Engagement Tools</a></h4>
+            <p class="description">Dedicated portals for students, parents, and teachers to facilitate seamless communication and engagement.</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="400">
+            <div class="icon"><i class="bi bi-sliders"></i></div>
+            <h4 class="title"><a href="">Customizable Solutions</a></h4>
+            <p class="description"> Scalable to fit the needs of schools, colleges, and universities of any size.</p>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Services Section -->
+
+    <!-- ======= Our Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio section-bg">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="section-title">
+          <h2>Our Portfolio</h2>
+          <p>Student360 is a cutting-edge student management platform designed to enhance the educational experience for institutions, educators, students, and parents. Our portfolio showcases our commitment to providing a comprehensive, user-friendly solution that streamlines operations and fosters collaboration.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-12">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">All</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row portfolio-container">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="/static/assets/img/portfolio/book-with-green-board-background.jpg" class="img-fluid" alt="" >
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="/static/assets/img/portfolio/classmates-friends-bag-school-education.jpg" class="img-fluid" alt="">
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="/static/assets/img/portfolio/cfcd7e1a-b99d-447c-8a2d-21c1e42b0e8f.jpg" class="img-fluid" alt="">
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="/static/assets/img/portfolio/empty-classroom-due-coronavirus-pandemic.jpg" class="img-fluid" alt="">
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="/static/assets/img/portfolio/education-day-arrangement-table-with-copy-space.jpg" class="img-fluid" alt="">
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="/static/assets/img/portfolio/students-knowing-right-answer.jpg" class="img-fluid" alt="">
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Our Portfolio Section -->
+
+
+    <!-- ======= Frequently Asked Questions Section ======= -->
+    <section id="faq" class="faq section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Frequently Asked Questions</h2>
+        </div>
+
+        <div class="row  d-flex align-items-stretch">
+
+          <div class="col-lg-6 faq-item" data-aos="fade-up">
+            <h4>What is Student360?</h4>
+            <p>
+              Student360 is a comprehensive student management platform designed to streamline the administration of student data, attendance, and academic performance for educational institutions.
+            </p>
+          </div>
+
+          <div class="col-lg-6 faq-item" data-aos="fade-up" data-aos-delay="200">
+            <h4> Is Student360 easy to use?</h4>
+            <p>
+              Yes! Student360 is designed with a user-friendly interface that makes navigation simple for users of all technical backgrounds. Comprehensive tutorials and support are available to assist new users.
+            </p>
+          </div>
+
+          <div class="col-lg-6 faq-item" data-aos="fade-up" data-aos-delay="100">
+            <h4>What features does Student360 offer?</h4>
+            <p>
+              Student360 includes features such as:
+              <ul>
+              <li>Student enrollment and profile management</li>
+              <li>Attendance tracking</li>
+              <li>Grade and performance monitoring</li>
+              <li>Communication tools for students, parents, and educators</li>
+              </ul>
+            </p>
+          </div>
+
+          <div class="col-lg-6 faq-item" data-aos="fade-up" data-aos-delay="300">
+            <h4> Can parents access Student360?</h4>
+            <p>
+              Yes, parents can access Student360 through a dedicated portal where they can view their child's academic progress, attendance records, and communicate with teachers.
+            </p>
+          </div>
+
+          <div class="col-lg-6 faq-item" data-aos="fade-up" data-aos-delay="400">
+            <h4>How secure is my data in Student360?</h4>
+            <p>
+              Data security is our top priority. Student360 uses advanced encryption, regular backups, and strict access controls to ensure that all user data is protected and secure.
+            </p>
+          </div>
+
+          <div class="col-lg-6 faq-item" data-aos="fade-up" data-aos-delay="500">
+            <h4> How do I get started with Student360?</h4>
+            <p>
+              Getting started is easy! Simply visit our website to sign up for a demo or contact our sales team for more information on setting up Student360 at your institution.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Frequently Asked Questions Section -->
+
+    <!-- ======= Contact Us Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Contact Us</h2>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-6 d-flex" data-aos="fade-up">
+            <div class="info-box">
+              <i class="bx bx-map"></i>
+              <h3>Our Address</h3>
+              <p>Anjali Nagar, Ottapalam, Palakkad, Kerala, IND 679484</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 d-flex" data-aos="fade-up" data-aos-delay="100">
+            <div class="info-box">
+              <i class="bx bx-envelope"></i>
+              <h3>Email Us</h3>
+              <p>student360@gmail.com<br>contact@student360.com</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 d-flex" data-aos="fade-up" data-aos-delay="200">
+            <div class="info-box ">
+              <i class="bx bx-phone-call"></i>
+              <h3>Call Us</h3>
+              <p>+91 22 1234 5678<br>+91 22 1234 5677</p>
+            </div>
+          </div>
+
+          <div class="col-lg-12" data-aos="fade-up" data-aos-delay="300">
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <div class="row">
+                <div class="col-lg-6 form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="col-lg-6 form-group">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                </div>
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+              </div>
+              <div class="form-group">
+                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+              </div>
+              <div class="my-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Us Section -->
+
+  </main><!-- End #main -->
+
+  {% include 'footer.html' %}
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="/static/assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="/static/assets/vendor/aos/aos.js"></script>
+  <script src="/static/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="/static/assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="/static/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="/static/assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="/static/assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="/static/assets/js/main.js"></script>
+
+</body>
+
+</html>
+
+

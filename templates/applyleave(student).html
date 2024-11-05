@@ -1,0 +1,137 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form method="post">
+        <table>
+            <tr>
+                <th>Send By</th>
+                <td><input type="text" name="sndby" id=""></td>
+            </tr>
+            <tr>
+                <th>Date</th>
+                <td><input type="date" name="ldate"></td>
+            </tr>
+            <tr>
+                <th>Status</th>
+                <td><input type="text" name="lstatus"></td>
+            </tr>
+            <td><input type="submit" name="lsubmit" value="submit"></td>
+        </table>
+    </form>
+</body>
+</html> -->
+
+{% include 'studentheader.html' %}
+<br><br>
+<html lang="tr">
+
+<head>
+
+
+    <!-- Standard Meta -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+    <!-- Site Properties -->
+    <title>Client Register Form</title>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <form class="form-horizontal" role="form" method="POST" action="">
+            <div class="row">
+                <div class="col-md-3"></div>
+                <div class="col-md-6">
+                    <h2>Apply Leave</h2>
+                    <hr>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 field-label-responsive">
+                    <label for="name">Send By</label>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+                            <!-- <div class="input-group-addon" style="width: 2.6rem">
+                                <i class="fa fa-user"></i>
+                            </div> -->
+                            <input type="text" name="sndby" class="form-control" id="name" placeholder="" pattern="{a-zA-Z}+" title="Only alphabets are allowed" required autofocus>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-md-3 field-label-responsive">
+                    <label for="email">Date</label>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+                            <!-- <div class="input-group-addon" style="width: 2.6rem">
+                                <i class="fa fa-user"></i>
+                            </div> -->
+                            <input type="date" name="ldate" class="form-control" id="surname" placeholder="Enter date" pattern="{0-9}+" title="Only numbers are allowed" required autofocus>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-md-3 field-label-responsive">
+                    <label for="Gender">Status</label>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+                            <!-- <div class="input-group-addon" style="width: 2.6rem">
+                                <i class="fa fa-user"></i>
+                            </div> -->
+                            <input type="text" name="lstatus" class="form-control" id="surname" placeholder="" required autofocus>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-md-3"></div>
+                <div class="col-md-6">
+                    <button type="submit" id="button" name="lsubmit" class="btn btn-success">
+                        <i class="fa fa-user-plus"></i>Submit</button>
+                </div>
+
+            </div>
+        </form>
+    </div>
+</body>
+</html>
+<br><br><br>
+
+{% include 'footer.html' %}
+
+<a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+<!-- Vendor JS Files -->
+<script src="/static/assets/vendor/purecounter/purecounter_vanilla.js"></script>
+<script src="/static/assets/vendor/aos/aos.js"></script>
+<script src="/static/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="/static/assets/vendor/glightbox/js/glightbox.min.js"></script>
+<script src="/static/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+<script src="/static/assets/vendor/swiper/swiper-bundle.min.js"></script>
+<script src="/static/assets/vendor/php-email-form/validate.js"></script>
+
+<!-- Template Main JS File -->
+<script src="/static/assets/js/main.js"></script>
